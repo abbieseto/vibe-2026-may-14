@@ -24,13 +24,15 @@ class FuturisticRobot extends HTMLElement {
                     filter: drop-shadow(0 0 20px rgba(148, 163, 184, 0.3));
                 }
                 .robot-body {
-                    fill: var(--metal-gradient);
+                    fill: var(--robot-metal);
                     stroke: var(--text-color);
                     stroke-width: 1;
+                    transition: fill var(--transition-speed);
                 }
                 .robot-accent {
-                    fill: var(--accent-glow);
+                    fill: var(--robot-accent);
                     filter: blur(2px);
+                    transition: fill var(--transition-speed);
                 }
                 .eye {
                     fill: #fff;
@@ -71,8 +73,9 @@ class FuturisticRobot extends HTMLElement {
                 }
 
                 .core {
-                    fill: var(--button-gradient);
+                    fill: var(--robot-core);
                     animation: pulse 2s infinite;
+                    transition: fill var(--transition-speed);
                 }
                 @keyframes pulse {
                     0%, 100% { opacity: 0.8; filter: brightness(1); }

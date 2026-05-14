@@ -20,6 +20,9 @@ This project is a modern web application featuring a Toto Number Generator. It s
 
 ### 4. Robotic Companion
 *   **Futuristic Robot:** A custom Web Component (`<futuristic-robot>`) featuring a detailed SVG-based robotic assistant.
+*   **Theme-Responsive Colors:** The robot dynamically changes its appearance based on the active theme:
+    *   **Day Mode:** Sleek, brushed silver metallic finish.
+    *   **Night Mode:** Brilliant, shiny gold finish.
 *   **Animations:** The robot features multi-layered CSS animations including floating, blinking eyes, a rotating head, and pulsing energy core.
 *   **Responsive Layout:** The interface automatically switches to a vertical layout on smaller screens, keeping the robot and lottery terminal stacked.
 *   **Themed Integration:** The robot's metallic finish and glowing accents are driven by the same CSS variables as the rest of the application, ensuring it perfectly matches both Day and Night modes.

@@ -18,6 +18,11 @@
     --button-shadow: 0 0 15px rgba(71, 85, 105, 0.4);
     --accent-glow: 0 0 10px rgba(255, 255, 255, 0.8);
     
+    /* Robot Day - Silver */
+    --robot-metal: linear-gradient(180deg, #ffffff 0%, #94a3b8 100%);
+    --robot-accent: #cbd5e1;
+    --robot-core: #6366f1;
+    
     --transition-speed: 0.5s;
     --font-main: 'Syncopate', sans-serif; /* A futuristic-feeling font */
 }
@@ -40,6 +45,11 @@
     --button-text: #020617;
     --button-shadow: 0 0 20px rgba(148, 163, 184, 0.4);
     --accent-glow: 0 0 15px rgba(148, 163, 184, 0.6);
+
+    /* Robot Night - Shiny Gold */
+    --robot-metal: linear-gradient(180deg, #fbbf24 0%, #b45309 100%);
+    --robot-accent: #f59e0b;
+    --robot-core: #fef3c7;
 }
 
 body {

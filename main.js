@@ -21,7 +21,8 @@ class FuturisticRobot extends HTMLElement {
                 svg {
                     width: 100%;
                     height: 100%;
-                    filter: drop-shadow(0 0 20px rgba(148, 163, 184, 0.3));
+                    filter: drop-shadow(0 0 25px var(--robot-glow));
+                    transition: filter var(--transition-speed);
                 }
                 .robot-body {
                     fill: var(--robot-metal);
@@ -71,16 +72,6 @@ class FuturisticRobot extends HTMLElement {
                     0%, 100% { transform: rotate(-5deg); }
                     50% { transform: rotate(5deg); }
                 }
-
-                .core {
-                    fill: var(--robot-core);
-                    animation: pulse 2s infinite;
-                    transition: fill var(--transition-speed);
-                }
-                @keyframes pulse {
-                    0%, 100% { opacity: 0.8; filter: brightness(1); }
-                    50% { opacity: 1; filter: brightness(1.5); }
-                }
             </style>
             <svg viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg">
                 <!-- Floating Base Effects -->
@@ -92,7 +83,6 @@ class FuturisticRobot extends HTMLElement {
                     
                     <!-- Torso -->
                     <rect x="90" y="200" width="120" height="150" rx="20" class="robot-body" />
-                    <circle cx="150" cy="275" r="30" class="core" />
                     
                     <!-- Arms -->
                     <g class="arm-left">
